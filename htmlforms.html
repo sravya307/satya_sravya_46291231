@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <style>
+        div {
+                border-radius: 10px;
+                border-style: groove;
+                padding: 20px;
+            }
+            form{
+                margin: 0px;
+                border: 5px;
+                border-style: groove;
+                padding: 30px;
+            }
+    </style>
+</head>
+<body>
+    <center><h1>Registration Form</h1></center>
+    <div>
+        <form >
+            <label for="fname">Full Name:</label><br>
+            <input type="text" name="name" id="fname" required><br><br>
+            <label for="email">Email id:</label><br>
+            <input type="email" name="email" id="email" required><br><br>
+            <label for="age">Enter Your Age:</label><br>
+            <input type="number" name="age" id="age"> <br><br>
+            <p>Gender</p>
+            <input type="radio" name="gender" id="option-1">
+            <label for="option-1">Male</label><br>        
+            <input type="radio" name="gender" id="option-2">
+            <label for="option-2">Female</label><br><br>
+            <label for="pwd">Create Password:</label><br>
+            <input type="password" name="pwd" id="pwd"><br><br>
+
+            <p>Select any 2 interests</p>
+            <input type="checkbox" id="option-1" name="interests">
+            <label for="option-1">Cricket</label><br>
+            <input type="checkbox" id="option-2" name="interests">
+            <label for="option-2">Basket Ball</label><br>
+            <input type="checkbox" id="option-3" name="interests">
+            <label for="option-3">Foot Ball</label><br><br>
+        
+            <label for="location">Select a your Location:</label>
+            <select name="location" id="location">
+                <option value="hyderabad">Hyderabad</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Chennai">Chennai</option>
+            </select><br><br>
+            <label for="bio">Enter Your Bio:</label><br><br>
+            <textarea name="bio" id="bio" cols="30" rows="10"></textarea><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    
+</body>
+</html>
